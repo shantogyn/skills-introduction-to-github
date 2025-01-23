@@ -1,0 +1,81 @@
+////////////////////////////
+/*      Shanto gyn       //
+   **  **BUBT 160**   **
+**     intake 54
+/////////////////////// */
+#include <bits/stdc++.h>
+#include<iostream>
+#include<vector>
+#include<map>
+#include<math.h>
+#include<algorithm>
+#include<ctime>
+#include<set>
+using namespace std;
+long long bigmod (int n, int p, int md) {
+if (p == 0) return 1;
+long long ans= bigmod(n, p / 2, md);
+ans = (ans * ans) % md;
+if (p % 2 == 1) ans = (ans * n) % md;
+return ans;
+}
+long long pinverse (int num, int md) {
+return bigmod(num, md - 2, md);
+}
+
+#define ll int32_t 
+#define int long long
+#define f(a,x)for(int i=a;i<x;i++)
+#define f1(a,x)for(int j=a;j<x;j++)
+const int MOD = 1e9 + 7;
+#ifndef cn
+#define cn  cin>>
+#endif
+
+#ifndef ct
+#define ct  cout<<
+#endif
+
+#define mss map<string,string>
+#define msi map<string,int>
+#define mii map<int,int>
+#define nx '\n'
+#define S second
+#define F first
+#define sa size()
+#define fd long double
+#define pb push_back
+#define ppb pop_back
+#define  bo toupper
+#define  lo tolower
+#define yes cout<<"YES"<<nx;
+#define  no cout<<"NO"<<nx;
+#define yno(x) cout<<(x?"YES":"NO")<<nx;
+#define noy(x) cout<<(x?"NO":"YES")<<nx;
+
+#define all(x)  (x).begin(), (x).end()
+void shanto()
+{
+    string  v = "bos";
+    int contry = 0;
+}
+
+const int m = 1e9 + 7;
+const int mod = 1073741824;
+#define slo cin.tie(0)->sync_with_stdio(0);
+void slove() {
+       
+              
+    }
+    
+
+int32_t main() {
+    slo;
+    int t=1;
+   cin >> t;
+while(t--)
+      slove();
+       
+    
+    return 0;
+}
