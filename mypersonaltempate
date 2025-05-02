@@ -1,0 +1,63 @@
+//cp my personal template
+#include <bits/stdc++.h>
+using namespace std;
+
+
+//==========slo============//
+
+#define slo cin.tie(nullptr)->sync_with_stdio(false)
+
+//================type=======//
+#define int long long
+#define pii pair<int, int>
+#define vpp vector<pii> 
+#define vi(name, size) vector<int> name(size)
+#define inputintpair(v, n) for(int i = 0; i < n; ++i) { int x, y; cin >> x >> y; v[i] = {x, y}; }
+
+
+//============intput================//
+template<typename T>
+void inputarr(vector<T>& a) {
+    for (auto &x : a) cin >> x;
+}
+
+
+//=============output=============//
+
+template<typename T>
+void outputarr(const vector<T>& a) {
+    for (auto &x : a) cout << x << ' ';
+    cout << "\n";
+}
+
+
+//=========Macros=================//
+#define all(x) x.begin(), x.end()
+#define rall(x) x.rbegin(), x.rend()
+#define nx '\n'
+#define coutt(x)  cout<<x<<nx;
+#define yno(x) if(x){coutt("Yes");}else {coutt("No");}
+#define noy(x) if(x){coutt("No");}else {coutt("Yes");}
+#define pb push_back
+#define ff first
+#define ss second
+#define yes coutt("Yes");
+#define no coutt("No");
+
+
+//=========main code========//
+
+void solve() {
+
+
+}
+
+int32_t main() {
+    slo;
+    int testcase = 1;
+    cin >> testcase;
+    while (testcase-->0) {
+        solve();
+    }
+    return 0;
+}
