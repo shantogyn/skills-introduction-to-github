@@ -66,10 +66,7 @@ int power(int a, int b, int mod) {
 //=========main code========//
 
 void solve() {
-cout<<"shanto"<<endl;
-int n;
-cin>>n;
-cout<<n<<endl;
+
 
 }
 
