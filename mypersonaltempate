@@ -9,10 +9,7 @@ using namespace std;
 
 //================type=======//
 #define int long long
-#define pii pair<int, int>
-#define vpp vector<pii> 
-#define vi(name, size) vector<int> name(size)
-#define inputintpair(v, n) for(int i = 0; i < n; ++i) { int x, y; cin >> x >> y; v[i] = {x, y}; }
+#define inputintpair(v, n) for(auto i = 0; i < n; ++i) { auto x, y; cin >> x >> y; v[i] = {x, y}; }
 
 
 //============intput================//
@@ -44,11 +41,35 @@ void outputarr(const vector<T>& a) {
 #define yes coutt("Yes");
 #define no coutt("No");
 
+//================ Math Utils ================//
+int gcd(int a, int b) {
+    return b ? gcd(b, a % b) : a;
+}
+
+int lcm(int a, int b) {
+    return (a / gcd(a, b)) * b;
+}
+
+int power(int a, int b, int mod) {
+    int res = 1;
+    a %= mod;
+    while (b > 0) {
+        if (b & 1) res = res * a % mod;
+        a = a * a % mod;
+        b >>= 1;
+    }
+    return res;
+}
+
+
 
 //=========main code========//
 
 void solve() {
-
+cout<<"shanto"<<endl;
+int n;
+cin>>n;
+cout<<n<<endl;
 
 }
 
@@ -56,7 +77,10 @@ int32_t main() {
     slo;
     int testcase = 1;
     cin >> testcase;
+    int n=1;
+
     while (testcase-->0) {
+        //cout<<"Case "<<n++<<": ";
         solve();
     }
     return 0;
