@@ -36,7 +36,7 @@ void outputarr(const vector<T>& a) {
 #define coutt(x)  cout<<x<<nx;
 #define yno(x) if(x){coutt("Yes");}else {coutt("No");}
 #define noy(x) if(x){coutt("No");}else {coutt("Yes");}
-#define setbitcount(c)  __builtin_popcount(a);
+#define setbitcount(x)  __builtin_popcount(x);
 #define pb push_back
 #define ff first
 #define ss second
