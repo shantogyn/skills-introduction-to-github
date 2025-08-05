@@ -29,12 +29,14 @@ void outputarr(const vector<T>& a) {
 
 
 //=========Macros=================//
+#define point(x) fixed << setprecision(x)
 #define all(x) x.begin(), x.end()
 #define rall(x) x.rbegin(), x.rend()
 #define nx '\n'
 #define coutt(x)  cout<<x<<nx;
 #define yno(x) if(x){coutt("Yes");}else {coutt("No");}
 #define noy(x) if(x){coutt("No");}else {coutt("Yes");}
+#define setbitcount(c)  __builtin_popcount(a);
 #define pb push_back
 #define ff first
 #define ss second
@@ -60,25 +62,37 @@ int power(int a, int b, int mod) {
     }
     return res;
 }
+const int N = 1e6 + 5;
+vector<bool> isPrime(N, true);
+
+void sieve() {
+    isPrime[0] = isPrime[1] = false;
+    for (int i = 2; i * i < N; ++i) {
+        if (isPrime[i]) {
+            for (int j = i * i; j < N; j += i)
+                isPrime[j] = false;
+        }
+    }
+}
 
 
 
 //=========main code========//
 
-void solve() {
 
+void slove() {
 
 }
+
 
 int32_t main() {
     slo;
     int testcase = 1;
     cin >> testcase;
     int n=1;
-
     while (testcase-->0) {
         //cout<<"Case "<<n++<<": ";
-        solve();
+        slove();
     }
     return 0;
 }
